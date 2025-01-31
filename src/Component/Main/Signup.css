@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #signup-heading {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(190deg, rgb(243, 235, 235), rgb(237, 147, 147));
+    animation: fadeIn 1.5s ease-in-out; 
+  }
+  #signup-details h1
+  {
+    margin-bottom: 20px;
+    text-align: center;
+
+  }
+  .signup-group {
+    position: relative;
+    margin-bottom: 20px;
+    animation: slideIn 1.2s ease-in-out; 
+    margin-left: 30px;
+  }
+  
+  .signup-group i {
+    margin-left: 10px;
+    position: absolute;
+    transform: translateY(70%);
+    color: #555;
+    transition: color 0.3s ease;
+  }
+  
+  .signup-group input[type="text"],
+  .signup-group input[type="email"],
+  .signup-group input[type="password"] {
+    width: 300px;
+    padding: 10px 40px; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  .signup-group input[type="text"]:focus,
+  .signup-group input[type="email"]:focus,
+  .signup-group input[type="password"]:focus {
+    border-color: #007bff; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .signup-group input[type="text"]:hover,
+  .signup-group input[type="email"]:hover,
+  .signup-group input[type="password"]:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .signup-group input[type="text"]:focus + i,
+  .signup-group input[type="email"]:focus + i,
+  .signup-group input[type="password"]:focus + i {
+    color: #007bff;
+  }
+  
+  #signup-heading img {
+    width: 400px;
+    border-radius: 20px;
+    animation: bounceIn 2s ease-in-out; 
+  }
+  
+  input[type="checkbox"] {
+   
+    cursor: pointer;
+    
+    margin: 25px 10px 0 0 ;
+    
+  }
+  
+  input[type="submit"] {
+    width: 300px;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    animation: zoomIn 1s ease-in-out; 
+    margin-left: 27px;
+  }
+  
+  input[type="submit"]:hover {
+    background: #0056b3;
+  }
+  
+  span {
+    font-size: 14px;
+    color: #555;
+  }
+#checkbox:hover + span
+  {
+    font-size: 14px;
+    color: black;
+  }
+  
+  
+  /* Animations */
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes bounceIn {
+    10% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    10% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  

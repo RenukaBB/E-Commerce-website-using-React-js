@@ -1,0 +1,469 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#navbar {
+    width: 100vw;
+    height: 80px;
+    background: white;
+    box-shadow: 2px 3px 14px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed; /* Change from static to fixed */
+    top: 0; /* Ensure it sticks to the top of the viewport */
+    z-index: 1000; /* Add z-index to make sure it appears above other content */
+    
+  }
+
+#navbar-title h1
+{
+/* padding-bottom: 10px; */
+font-weight: 700;
+}
+
+#navbar-items {
+  
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.link:hover {
+  background: linear-gradient(45deg, black, rgb(232, 145, 4));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+#navbar-search {
+    margin-right: 25px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  align-items: center;
+}
+
+#navbar-search input {
+  width: 180px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 14px;
+}
+#navbar-search input::placeholder
+{
+font-size: 12px;
+}
+
+#navbar-search i,
+#navbar-search a {
+  padding-left: 10px;
+  font-size: 16px;
+  color: #888;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#navbar-search a:hover {
+  background: linear-gradient(45deg, black, rgb(232, 145, 4));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+#navbar-icon i {
+  padding-right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#navbar-icon i:hover {
+  background: linear-gradient(45deg, black, rgb(232, 145, 4));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+#home-part1 {
+    background-color: rgb(247, 244, 244);
+    margin: 100px 0 0 40px; /* Add top margin to prevent overlapping */
+    width: 94vw;
+    height: 480px;
+    position: relative; /* Change position to relative to avoid sticky conflicts */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#home-part1 p
+{
+    padding-top: 10px;
+    color: rgb(83, 79, 80);
+}
+#home-part1 button,button:hover
+{
+    margin-top: 15px;
+    background: rgb(46, 48, 49);
+    border: none;
+    border-radius: 20px;
+    width: 90px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#home-part1-img img
+{
+    width: 300px;
+}
+#home-part2
+{
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 70px;
+
+}
+#cloud {
+    background-color: rgb(222, 219, 219);
+    margin: 10px 0 10px 0px; 
+    width: 25.4%;
+    height: 340px;
+    position: relative; 
+    border-radius: 10px;
+    
+}
+#cloud img
+{
+    /* margin-left: 20px; */
+    position: relative;
+    left: -30px;
+    bottom: 10px;
+    right: 85px;
+    width: 395px;
+    height: 350px;
+}
+#cloud img:hover
+{
+opacity: 0.5;
+transform: translateY(-10px);
+}
+#home-part2 h1
+{
+    /* padding-left: 35px; */
+    font-size: 25px;
+}
+#cloud p:first-child {
+    padding-left: 80px;
+    font-size: 20px;
+}
+
+#home-part2a
+{
+    margin: 20px 0 0 0;
+    width: 94vw;
+    display: flex;
+    justify-content: space-around;
+}
+#cloud1 img
+{
+    width: 500px;
+    border-radius: 10px;
+}
+#cloud1a img
+{
+    width: 500px;
+    border-radius: 10px;
+}
+#para p
+{
+    margin-right: 20px;
+}
+#cloud1:hover , #cloud1a:hover {
+    opacity: 0.7;
+}
+
+
+
+/* Outer container */
+#border-down {
+  margin-top: 20px;
+  background-color: rgb(240, 240, 240);
+  height: 220px;
+  position: relative;
+  width: 100%;
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space between left and right sections */
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Left Section */
+#details-product-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#details-product-left h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#details-product-left input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+#details-product-left button {
+  background-color: #1a202c;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Right Section */
+#details-product-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px; /* Space between Products and Support */
+}
+
+#details-Product,
+#details-Product1 {
+  text-align: left;
+}
+
+#details-Product h4,
+#details-Product1 h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#details-Product a,
+#details-Product1 a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+#details-Product a:hover,
+#details-Product1 a:hover {
+  text-decoration: underline;
+}
+
+/* Outer container */
+#border-down {
+  margin-top: 20px;
+  background-color: rgb(240, 240, 240);
+  height: 250px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Left Section */
+#details-product-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+#details-product-left h1 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+#details-product-left input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 250px;
+}
+
+#details-product-left button {
+  background-color: #1a202c;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Right Section */
+#details-product-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+#details-Product,
+#details-Product1 {
+  text-align: left;
+}
+
+#details-Product h4,
+#details-Product1 h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#details-Product a,
+#details-Product1 a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+#details-Product a:hover,
+#details-Product1 a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Section */
+#footer {
+  /* text-align: center; */
+  padding: 15px 0;
+  font-size: 14px;
+  color: #555;
+  background-color: rgb(240, 240, 240);
+  border-top: 1px solid #ddd;
+}
+
+#footer p {
+  margin: 5px 0;
+}
+#Apparel-heading
+{
+  padding-top: 10px;
+  padding-left: 30px;
+}
+#Apparel-heading h3
+{
+font-size: 1.5rem;
+}
+#Apparel-heading p
+{
+color: #888;
+}
+
+#Apparel-detail {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+  /* gap: 10px;  */
+  column-gap: 10px;
+  row-gap: 70px;
+  width: 100%; /* Ensure container fits within the viewport */
+}
+
+.Apparel-items-box {
+  margin: 0; /* Remove extra margin */
+  border-radius: 10px;
+  background-color: #eae7e7;
+  width: 25%; /* Adjust as needed for layout */
+  height: 340px;
+  box-sizing: border-box; /* Ensure padding and border don't exceed width */
+}
+
+.Apparel-item-all img {
+  width: 100%; /* Scale image to fit its container */
+  height: 300px; /* Ensure image stretches to container height */
+  object-fit: cover; /* Maintain aspect ratio while filling the container */
+  position: static; /* Remove unnecessary relative positioning */
+}
+
+.Apparel-item-all h1
+{
+ margin: 40px  0 0 0; 
+font-size: 1.3rem;
+text-align: center;
+}
+.Apparel-item-all p
+{
+text-align: center;
+}
+
+/* Target the 10th Apparel-items-box */
+.Apparel-items-box:nth-child(10) {
+ margin-right: 63%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Subscribe-group
+{
+  position: relative;
+  top: 160px;
+}
+
+
+
+
+
+/* Mobile view adjustments */
+@media screen and (max-width: 500px) {
+  #navbar-items {
+    display: none; /* Hide the navbar items */
+  }
+
+  #navbar-search {
+    display: none; /* Hide the search bar */
+  }
+
+  #navbar-icon i {
+    display: block; /* Show the icon */
+  }
+}

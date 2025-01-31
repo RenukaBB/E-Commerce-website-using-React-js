@@ -1,0 +1,32 @@
+{
+  "user": [
+    {
+      "id": "2c3e",
+      "uname": "sharath",
+      "email": "vsarath200219@gmail.com",
+      "pass": "12345",
+      "confirmpass": "12345"
+    },
+    {
+      "id": "f64d",
+      "uname": "Venkatesh",
+      "email": "venkatesh@gmail.com",
+      "pass": "12345",
+      "confirmpass": "12345"
+    },
+    {
+      "id": "b783",
+      "uname": "darshini",
+      "email": "dars@gmail.com",
+      "pass": "1234",
+      "confirmpass": "1234"
+    },
+    {
+      "id": "4bdd",
+      "uname": "bharath",
+      "email": "bharath@gmail.com",
+      "pass": "12345",
+      "confirmpass": "12345"
+    }
+  ]
+}
